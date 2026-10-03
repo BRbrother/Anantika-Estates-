@@ -37,3 +37,8 @@ document.getElementById("leadForm").addEventListener("submit",e=>{
  document.getElementById("formNote").textContent="Your enquiry is ready to send on WhatsApp.";
 });
 renderProperties();
+function openWhatsApp() {
+  const phoneNumber = "919256259598";
+  const message = encodeURIComponent("Hello Anantika Estates, I am interested in property details.");
+  window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+}
